@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+    /* background: #252A2E; */
+}
+
+a{ text-decoration: none; }
+a:hover{ text-decoration: none; }
+li{ list-style: none; }
+p{
+    font-family: 'Work Sans', sans-serif!important;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+}
+
+i{
+    color: #2fccd0;
+}
+
+body{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/****************** Actual css start ******************/
+
+
+.header{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.navbar{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: #ffffff;
+}
+
+
+.nav-item a{
+    color: #ffffff!important;
+    font-weight: bold;
+}
+
+.header-section{
+    width: 100%;
+    height: inherit;
+    position: relative;
+    color: #fff;
+    background: #252a2e;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Righteous', cursive;
+}
+
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+/* header part end */
+
+/* About section start */
+.headings{
+    font-family: 'Righteous', cursive;
+    color: #FFF;
+    font-size: 48px;
+    line-height: 50px;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.headings h1:before{
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #1CB698;
+    width: 80px;
+    bottom: 8px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    display: table;
+}
+
+.headings h1:after{
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #1CB698;
+    width: 40px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    display: table;
+}
+
+.about-section{
+    width: 100%;
+    height: auto;
+    background: #1E2326;
+    padding: 20px;
+}
+
+.about-paragraph{
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+    font-size: 1rem;
+    padding: 0 0 30px;
+    font-family: 'Work Sans', sans-serif!important;
+}
+.about-paragraph span{
+    color: #1CB698;
+}
+
+.icons i{
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #1CB698;
+    border-radius: 50%;
+    position: relative;
+    padding: 8px;
+    margin: 10px;
+    
+}
+
+/* About section end */
+
+/* Skills section start */
+.skills-section{
+    width: 100%!important;
+    height: auto;
+    background: #000;
+    padding-bottom: 20px;
+}
+
+.skills-heading p{
+    font-size: 1rem!important;
+    color: #1CB698!important;
+}
+
+.box{
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0,0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+    padding-bottom: 10px;
+}
+
+.box:hover{
+    background-color: #1E2326;
+}
+
+.box:hover p{
+    color: #ffffff;
+}
+
+.box a{
+    position: relative;
+}
+
+.box img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* .box a:after{
+    content: "\f10d";
+    font-family: FontAwesome;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9fc 100%);
+    color: #fff;
+    position: absolute;
+    top: 120%;
+    left: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .box h1{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 10px;
+} */
+
+.box h2{
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 10px;
+} 
+
+.box:hover h2{
+    font-size: 15px;
+    font-weight: 400;
+    color: #1CB698!important;
+    margin-bottom: 10px;
+} 
+
+
+/* skills section end */
+
+
+.progressbar{
+    margin-left: 1rem;
+    position: relative;
+    width: 100%;
+    height: 7px;
+    margin: 30px 0 2px;
+    border-radius: 10px;
+    background: #000000
+}
+
+.percentage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7px;
+    border-radius: 10px;
+    background: #1CB698;
+    width: 80%;
+}
+
+.percentage-num{
+    position: absolute;
+    top: -17px;
+    right: -15px;
+    font-weight: normal;
+    width: 40px;
+    height: 40px;
+    background: #1CB698;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    font-size: 15px;
+}
+
+.skill-name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    opacity: 0.9;
+    color: #1CB698;
+    margin-left: 16px;
+}
+
+.skill-highlight{
+    color: #1CB698!important;
+    /* font-size: 1rem; */
+    font-weight: bold;
+    font-family: inherit;
+}
+
+/* skills end */
+
+
+/* projects start */
+
+.projects-section{
+    width: 100%;
+    height: auto;
+    background: #1E2326;
+    padding-bottom: 20px;
+}
+
+.projects-section img{
+    width: 150px;
+    height: 150px;
+}
+
+.project-name{
+    color: #1CB698;
+}
+
+/* projects end */
+
+
+/* education start */
+
+.education-section{
+    width: 100%;
+    height: auto;
+    background: #252A2E;
+}
+
+.edu-details{
+    /* padding-left: 35px; */
+    border-left: 3px solid #1CC698;
+    margin-left: 45px;
+}
+
+
+.edu-item-left{
+    /* width: 50%; */
+    margin-top: 20px;
+    margin-left: 45px!important;
+    position: relative;
+    display: block;
+    border-left: 2px solid #1CB698;
+    padding: 25px;
+    background: #1E2326;
+    box-shadow: 0px 18px 18px 0 rgba(0, 0,0,0,0.3);
+}
+
+.edu-item-left::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: #1CB698;
+    border-radius: 10px;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: -43px;
+    border: 2px solid #1CB698;
+    z-index: 2;
+    transform: translateY(-45%);
+}
+
+.edu-item-left::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: #1CB698;
+    border-radius: 10px;
+    width: 36px;
+    height: 2px;
+    top: 50%;
+    left: -37px;
+    z-index: 1;
+}
+
+
+.edu-item-right{
+    /* width: 50%; */
+    padding-top: 30px;
+    margin-top: 10px;
+    position: relative;
+    display: block;
+    border-right: 2px solid #1CB698;
+    padding: 25px;
+    background: #1E2326;
+    box-shadow: 0px 18px 18px 0 rgba(0, 0,0,0,0.3);
+}
+
+.edu-item-right::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: #1CB698;
+    border-radius: 10px;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    right: -43px;
+    border: 2px solid #1CB698;
+    z-index: 2;
+    transform: translateY(-45%);
+}
+
+.edu-item-right::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: #1CB698;
+    border-radius: 10px;
+    width: 36px;
+    height: 2px;
+    top: 50%;
+    right: -37px;
+    z-index: 1;
+}
+
+.edu-subtitle{
+    color: #1CB698;
+}
+
+.edu-title{
+    font-family: 'Work Sans', sans-serif!important;
+    color: #fff;
+}
+
+.edu-year{
+    font-family: 'Work Sans', sans-serif!important;
+    color: #1CB698;
+    font-weight: bold;
+}
+/* education end */   
